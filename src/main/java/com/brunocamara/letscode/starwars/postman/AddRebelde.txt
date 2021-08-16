@@ -1,0 +1,17 @@
+curl --location --request GET 'http://127.0.0.1:8080/addrebelde' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "id": "1",
+    "nome": "Bruno",
+    "idade": "20",
+    "genero": "M",
+    "localizacao": {
+        "id": "2",
+        "nome": "Origin",
+        "latitude": 1,
+        "longitude": 2
+    },
+    "inventario": {
+    },
+    "isTraidor": "false"
+}'
