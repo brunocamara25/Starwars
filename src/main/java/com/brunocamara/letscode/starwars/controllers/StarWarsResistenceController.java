@@ -45,12 +45,6 @@ public class StarWarsResistenceController {
     @PostMapping(produces="application/json")
     public @ResponseBody List<Rebelde> addRebelde(@RequestBody @NotNull Rebelde data){
 
-        System.out.println(data.getId());
-        System.out.println(data.getNome());
-        System.out.println(data.getGenero());
-        System.out.println(data.getIdade());
-
-
         List<Rebelde> rebeldeList = new ArrayList<Rebelde>();
         rebeldeList.add(data);
         rebeldeService.saveRebelde(data);
